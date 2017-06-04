@@ -10,8 +10,9 @@ Photography Website
 
 
 ##Note's By Ebraheem
-Note 1: Might Want to Scale Back on the Home Page being similar to the twit website because we don't need a bunch of html engulfing it.
-Note 2: The Navbar Might need a lot of NodeJS coding that might take too long to code.
-Note 3: I've got some basic index.js up but the only issue I'm having is how to add the Event Listers dynamically.
-Note 4: We can always scale back the currently thing if need be.
-Note 5: For testing purpose I've included Local Photos to work with. The G folder is to symbolize Galleries and G# symbolizes the number.
+
+1. Might Want to Scale Back on the Home Page being similar to the twit website because we don't need a bunch of html engulfing it.
+2. The Navbar Might need a lot of NodeJS coding that might take too long to code.
+3. I've got some basic index.js up but the only issue I'm having is how to add the Event Listers dynamically.
+4. We can always scale back the currently thing if need be.
+5. For testing purpose I've included Local Photos to work with. The G folder is to symbolize Galleries and G# symbolizes the number.
