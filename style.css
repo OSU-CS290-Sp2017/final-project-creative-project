@@ -11,10 +11,10 @@ Colors:
 /*
 /**************************************/
 /*Universal Styling*/
-body {
-	background-color: #eee;
-	margin: 0px;
-	font-family: 'Oswald', sans-serif;
+body{
+   margin: 0px 0px 0px 0px;
+   background-color: lightgray;
+   font-family: 'Oswald', sans-serif;
 	font-weight: normal;
 }
 
@@ -27,14 +27,15 @@ a:hover, a:focus {
 	color: #f27649;
 }
 
-/*img {
-	max-width: 100%;
-	max-height: 100%;
-}*/
-
 input {
 	outline: none;
 	width: 100%;
+}
+
+img {
+   border-radius: 10px;
+   width: 300px;
+   height: 300px;
 }
 
 
@@ -43,13 +44,16 @@ input {
 /*Site title and Navbar*/
 
 .site-title {
-	margin: 0px 0px 0px 0px;
-	padding: 20px;
-	background-color: #14a697;
-	color: #fff;
-
-	text-align: left;
-	font-size: 48px;
+   display: block;
+   text-align: center;
+   margin: 0;
+   font-size: 60px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   background-color: #3B3738;
+   font-weight: lighter;
+   color: #FFFFFF;
+   margin: 0;
 }
 
 .navbar {
@@ -68,11 +72,13 @@ input {
 .navitem {
 	display: inline-block;
 	padding: 0px 10px 0px 10px;
+   margin-left: 20px;
 }
 
 .right {
 	float: right;
 	height: 35px;
+   padding-right: 20px;
 }
 
 .site-title.navbar {
@@ -98,51 +104,24 @@ input {
 /**************************************/
 /*Main content*/
 
-.content-container {
-	margin: 25px 5%;
-	display: flex;
-	flex-wrap: wrap;
-
+.Galleries {
+   padding: 20px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
 }
 
 /**************************************/
 /*Gallery Cards*/
 
-#card-wrapper {
-	background-color: #fff;
-	border: 1px solid #bbb;
-	border-radius: 2px;
-	padding: 7px;
-	width: 100%;
+.Gallery {
+   width: 300px;
+   height: 300px;
+   margin: 20px;
 }
 
-.gallery-card {
-	display: flex;
-	flex-basis: 23%;
-	flex-grow: 0;
-	align-items: center;
-
-	margin: 5px;
-	
-	background-color: #eee;
-}
-
-.gallery-content {
-	text-align: center;
-}
-
-.gallery-title {
-	height: 25px;
-	margin: 5px 10px 0px 10px;
-}
-
-.image-container {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-.image{
-	display: block;
-	max-height: 100%;
-	max-width: 100%;
+.popup {
+   display: none;
+   font-size: 20px;
+   text-align: center;
 }
