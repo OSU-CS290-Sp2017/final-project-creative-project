@@ -5,15 +5,19 @@ var backdrops = document.getElementsByClassName('card-backdrop');
 //Add hover listeners to each gallery card
 for(var i = 0; i < img.length; i++){
   (function(backdrop){
-    img[i].onmouseover =  function(){
-      backdrop.style.display = 'flex';
-    };
+	img[i].onmouseover =  function(){
+	  backdrop.style.backgroundColor = 'rgba(59, 55, 56, 0.70)';
+	  backdrop.style.color = 'rgba(255,255,255,1)'
+	  // backdrop.style.transition = 'visibility 4s';
+	};
   }) (backdrops[i]);
 
   (function(backdrop){
   img[i].onmouseout =  function(){
-      backdrop.style.display = 'none';
-    };
+	  backdrop.style.backgroundColor = 'rgba(59, 55, 56, 0)';
+	  backdrop.style.color = 'rgba(255,255,255,0)'
+	  // backdrop.style.transition = 'all 2s';
+	};
   }) (backdrops[i]);
 }
 
