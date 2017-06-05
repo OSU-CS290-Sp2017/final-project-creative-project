@@ -41,6 +41,8 @@ img {
 
 
 
+
+
 /**************************************/
 /*Site title and Navbar*/
 
@@ -116,6 +118,7 @@ img {
 /*Gallery Cards*/
 
 .Gallery {
+   position: relative;
    width: 300px;
    height: 300px;
    margin: 20px;
@@ -123,7 +126,30 @@ img {
 
 
 .popup {
-   display: none;
    font-size: 20px;
    text-align: center;
 }
+
+.card-backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.65);
+
+   width: 300px;
+   height: 300px;
+   border-radius: 10px;
+
+
+   color: white; 
+   text-align: center;
+   font-size: 20px;
+
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+

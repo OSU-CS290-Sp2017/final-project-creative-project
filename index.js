@@ -1,18 +1,20 @@
-var img = document.getElementsByTagName('img');
-var popups = document.getElementsByClassName('popup');
+var img = document.getElementsByClassName('Gallery');
+var backdrops = document.getElementsByClassName('card-backdrop');
 
 
 //Add hover listeners to each gallery card
 for(var i = 0; i < img.length; i++){
-  (function(popelem){
+  (function(backdrop){
     img[i].onmouseover =  function(){
-      popelem.style.display = 'block';
+      backdrop.style.display = 'flex';
     };
-  }) (popups[i]);
+  }) (backdrops[i]);
 
-  (function(popelem){
+  (function(backdrop){
   img[i].onmouseout =  function(){
-      popelem.style.display = 'none';
+      backdrop.style.display = 'none';
     };
-  }) (popups[i]);
+  }) (backdrops[i]);
 }
+
+
