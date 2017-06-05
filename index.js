@@ -2,6 +2,7 @@ var img = document.getElementsByTagName('img');
 var popups = document.getElementsByClassName('popup');
 
 
+//Add hover listeners to each gallery card
 for(var i = 0; i < img.length; i++){
   (function(popelem){
     img[i].onmouseover =  function(){
