@@ -16,3 +16,10 @@ Photography Website
 3. I've got some basic index.js up but the only issue I'm having is how to add the Event Listers dynamically.
 4. We can always scale back the currently thing if need be.
 5. For testing purpose I've included Local Photos to work with. The G folder is to symbolize Galleries and G# symbolizes the number.
+
+
+##Progress update
+
+1. I've ported most everything to handlebars.
+2. We currently read things from a .json file
+3. index.bak is the original html document, just in case
