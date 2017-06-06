@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, '/public/')));
 app.get('/', function (req, res, next) {
 	var args = {
 		galleries: cardinfo,
-		title: "Photography Galleries test",
+		title: "Photography Galleries",
 		navbar: "Add Gallery"
 	};
 	res.status(200);
