@@ -10,10 +10,12 @@ app.engine("handlebars", exphbs());
 app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
+app.use(express.static(path.join(__dirname, '/public/')));
+
 app.get('/', function (req, res, next) {
 	var args = {
 		galleries: cardinfo,
-		title: "Photography Galleries",
+		title: "Photography Galleries test",
 		navbar: "Add Gallery"
 	};
 	res.status(200);

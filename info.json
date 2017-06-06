@@ -17,5 +17,16 @@
 		"author": "Jane Smith",
 		"image": "G/G3/G3Main.jpg"
 	},
-
+	{
+		"url": "gallery/4",
+		"gallery": "Gallery 4",
+		"author": "Jonas Smith",
+		"image": "G/G4/G4Main.jpg"
+	},
+	{
+		"url": "gallery/5",
+		"gallery": "Gallery 5",
+		"author": "Joe Smith",
+		"image": "G/G5/G5Main.jpg"
+	}
 ]
