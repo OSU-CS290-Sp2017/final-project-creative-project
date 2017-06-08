@@ -2,29 +2,54 @@
 
 <form action="" method="post" enctype="multipart/form-data">
          <fieldset>
-            <label for="galleryname">Gallery Name:</label>
-            <input type="text" id="galleryname" name="galleryname" placeholder="Enter your Gallery Name" />
-            <br />
-            <label for="author">Author:</label>
-            <input type="text" id="author" name="author" placeholder="Enter your Author Name" />
-            <br />
 
-            <label for="imageurl1">Image Url 1:</label>
-            <textarea type="url" id="imageurl1" name="imageurl1" placeholder="Enter a URL for the Main Photo"></textarea>
-            <br />
-            <label for="imageurl2">Image Url 2:</label>
-            <textarea type="url" id="imageurl2" name="imageurl2" placeholder="Enter a URL for the Photo"></textarea>
-            <br />
-            <label for="imageurl3">Image Url 3:</label>
-            <textarea type="url" id="imageurl3" name="imageurl3" placeholder="Enter a URL for the Photo"></textarea>
-            <br />
-            <label for="imageurl4">Image Url 4:</label>
-            <textarea type="url" id="imageurl4" name="imageurl4" placeholder="Enter a URL for the Photo"></textarea>
-            <br />
-            <label for="imageurl5">Image Url 5:</label>
-            <textarea type="url" id="imageurl5" name="imageurl5" placeholder="Enter a URL for the Photo"></textarea>
-            <br />
+         <table>
 
-            <input type="submit" value="Submit Gallery" />
+            <tr>
+            <th><label for="galleryname" class="name">Gallery Name</label></th>
+            <th><input type="text" id="galleryname" name="galleryname" placeholder="Enter your Gallery Name" />
+            <br/></th>
+            </tr>
+            
+            <tr>
+            <th><label for="author" class="name">Author</label></th>
+            <th><input type="text" id="author" name="author" placeholder="Enter your Author Name" />
+            <br/></th>
+            </tr>
+            
+            <tr>
+            <th><label for="imageurl1" class="imageurl1">Image Url 1</label></th>
+            <th><textarea type="url" id="imageurl1" name="imageurl1" placeholder="Enter a URL for the Main Photo"></textarea>
+            <br/></th>
+            </tr>
+            
+            <tr>
+            <th><label for="imageurl2" class="imageurl1">Image Url 2</label></th>
+            <th><textarea type="url" id="imageurl2" name="imageurl2" placeholder="Enter a URL for the Photo"></textarea>
+            <br/></th>
+            </tr>
+            
+            <tr>
+            <th><label for="imageurl3" class="imageurl2">Image Url 3</label></th>
+            <th><textarea type="url" id="imageurl3" name="imageurl3" placeholder="Enter a URL for the Photo"></textarea>
+            <br/></th>
+            </tr>
+
+            <tr>
+            <th><label for="imageurl4" class="imageurl3">Image Url 4</label></th>
+            <th><textarea type="url" id="imageurl4" name="imageurl4" placeholder="Enter a URL for the Photo"></textarea>
+            <br/></th>
+            </tr>
+
+            <tr>
+            <th><label for="imageurl5" class="imageurl4">Image Url 5</label></th>
+            <th><textarea type="url" id="imageurl5" name="imageurl5" placeholder="Enter a URL for the Photo"></textarea>
+            <br/></th>
+            </tr>
+
+          </table>
+
+          <input type="submit" class="submit" value="Submit Gallery" />
+
          </fieldset>
       </form>

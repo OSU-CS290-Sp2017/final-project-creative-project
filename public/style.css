@@ -27,11 +27,6 @@ a:hover, a:focus {
 	color: #f27649;
 }
 
-input {
-	outline: none;
-	width: 100%;
-}
-
 img {
    border-radius: 10px;
    width: 300px;
@@ -153,4 +148,37 @@ img {
 	justify-content: center;
 
 	transition: all 0.3s;
+}
+
+/**************************************/
+/*Add Gallery page*/
+
+form {
+	padding: 3% 7% 0 7%;
+}
+
+fieldset {
+	padding: 3%;
+	width: 60%;
+	margin: auto;
+}
+
+table {
+	width: 90%;
+	margin: auto;
+}
+
+tr {
+	height: 40px;
+}
+
+
+input, textarea {
+	padding: 10px;
+	width: 100%;
+}
+
+.submit {
+	margin: auto;
+	width: 50%;
 }
