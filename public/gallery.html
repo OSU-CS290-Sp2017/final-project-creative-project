@@ -24,8 +24,8 @@
             <img name="preview" src="/G/G1/car1.jpg" alt=""/>
           </div>
 <br>
+    <div class="wrap">
         <div class="mini-imgs" align="center" id="_select">
-
           <img onmouseover="preview.src=car1.src" name="car1" src="/G/G1/car1.jpg" alt="" />
           <img onmouseover="preview.src=car2.src" name="car2" src="/G/G1/car2.jpg" alt="" />
           <img onmouseover="preview.src=car3.src" name="car3" src="/G/G1/car3.jpg" alt="" />
@@ -34,6 +34,7 @@
           <img onmouseover="preview.src=car6.src" name="car6" src="/G/G1/car6.jpg" alt="" />
           <img onmouseover="preview.src=car7.src" name="car7" src="/G/G1/car7.jpg" alt="" />
         </div>
+      </div>
         <br>
 
         </main>
@@ -78,4 +79,30 @@
 body {
   background-color: black !important;
 }
+
+.wrap {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px !important;
+  max-width: 600px;
+  padding-top: 5px;
+}
+
+.mini-imgs {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 110px;
+  white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+  background-color: #808080;
+}
+
+
+
 </style>
