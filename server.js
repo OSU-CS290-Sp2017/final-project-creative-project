@@ -1,7 +1,10 @@
 var path = require("path");
 var express = require("express");
 var exphbs = require("express-handlebars");
+var fs = require('fs');
 var cardinfo = require("./info.json");
+var formidable = require("formidable");
+var util = require('util');
 
 var app = express();
 var port = process.env.PORT || 3000;
@@ -32,6 +35,49 @@ app.get('/addgallery', function (req, res, next) {
 	res.render('addgallery', args);
 })
 
+app.post('/addgallery', function (req, res, next) {
+	//Store the data from the fields in your data store.
+	//The data store could be a file or database or any other store based
+	//on your application.
+	var fields = [];
+	var form = new formidable.IncomingForm();
+	form.on('field', function (field, value) {
+		fs.appendFile("test.txt", "\n", function(err) {
+		if(err) {
+			return console.log(err);
+		}
+		});
+
+		fs.appendFile("test.txt", field, function(err) {
+    	if(err) {
+        	return console.log(err);
+    	}
+		});
+
+		fs.appendFile("test.txt", "\n", function(err) {
+    	if(err) {
+        	return console.log(err);
+    	}
+		});
+
+		fs.appendFile("test.txt", value, function(err) {
+    	if(err) {
+        	return console.log(err);
+    	}
+		});
+
+		fs.appendFile("test.txt", "\n", function(err) {
+		if(err) {
+			return console.log(err);
+		}
+		});
+	});
+
+	form.parse(req);
+	res.redirect('/');
+})
+
+
 app.get('/gallery/:page', function(req, res, next){
 
 	var page = req.params.page;
@@ -60,7 +106,7 @@ app.get('*', function (req, res) {
 	};
 	res.status(404);
 	res.render('404Page',args);
-});
+})
 
 app.listen(port, function(){
 	console.log("Server has started on port: " + port + "\n");
