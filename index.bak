@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <head>
+	<title>Photography Galleries</title>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+  </head>
+	 <body>
+		<header>
+			<h1 class="site-title">
+				Photography Galleries
+		 </h1>
+			<nav class ="navbar">
+				<ul class ="navlist">
+					<li class = "navitem"><a href="#">Add Gallery</a></li>
+					<li class = "navitem right">
+						<input type = "text" placeholder = "Search..." class = "site-search "/>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="Galleries">
+		  <div class="Gallery">
+			<a href="gallery/1">
+				<div class="card-backdrop">Gallery 1 | John Smith</div>
+				<img src="G/G1/G1Main.jpg" /></a>
+		  </div>
+		  <div class="Gallery">
+			<a href="gallery/2">
+				<div class="card-backdrop">Gallery 2 | Author Example</div>
+				<img src="G/G2/G2Main.jpg" /></a>
+		  </div>
+		  <div class="Gallery">
+			<a href="gallery/3">
+				<div class="card-backdrop">Gallery 3 | Jane Smith</div>
+				<img src="G/G3/G3Main.jpg" /></a>
+		  </div>
+		  <div class="Gallery">
+			<a href="gallery/4">
+				<div class="card-backdrop">Gallery 4 | Jonas Smith</div>
+				<img src="G/G4/G4Main.jpg" /></a>
+		  </div>
+		  <div class="Gallery">
+			<a href="gallery/5">
+				<div class="card-backdrop">Gallery 5 | Jesus Smith</div>
+				<img src="G/G5/G5Main.jpg" /></a>
+			</div>
+	   </main>
+
+
+	   </div>
+
+	 </body>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.runtime.js"></script>
+     <script type="text/javascript" src="index.js" charset="utf-8"></script>
+
+</html>
