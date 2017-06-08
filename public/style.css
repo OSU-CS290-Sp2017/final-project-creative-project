@@ -209,7 +209,7 @@ input {
 }
 
 .submit:hover {
-	box-shadow: 5px 5px 5px #909090;
+	box-shadow: 3px 3px 5px #909090;
 }
 
 .imageurl1, .imageurl2, .imageurl3, .imageurl4, .imageurl5 {
