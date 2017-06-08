@@ -25,23 +25,19 @@ app.get('/', function (req, res, next) {
 app.get('/gallery/:page', function(req, res, next){
 
 	var page = req.params.page;
-	var singleCard = cardinfo[page-1];
+	var singleCard = cardinfo[page];
 
-	console.log(singleCard.gallery);
-
-	if(page > cardinfo.length || page < 0 || page == "-0"){
-		next();
-	}
-	else{
-		var args = {
-			galleries: singleCard, //change to actual images in gallery
-			title: singleCard["gallery"],
-			navbar: "By " + singleCard.author,
-			navbarLink: "#"
-		};
-		res.status(200);
-		res.render('gallerypage', args);
-	}
+   if (singleCard) {
+      var args = {
+		  galleries: singleCard, //change to actual images in gallery
+ 		  title: singleCard["gallery"] + " - By: " + singleCard.author,
+ 		  navbar: "Home",
+ 		  navbarLink: "/"
+     };
+     res.render('gallerypage', args);
+   } else {
+     next();
+   }
 })
 
 app.get("*", function(req, res){
@@ -49,6 +45,16 @@ app.get("*", function(req, res){
 })
 
 app.use(express.static(path.join(__dirname, '/public/')));
+
+app.get('*', function (req, res) {
+	var args = {
+		title: "Photography Galleries",
+		navbar: "Home",
+		navbarLink: "/"
+	};
+	res.status(404);
+	res.render('404Page',args);
+});
 
 app.listen(port, function(){
 	console.log("Server has started on port: " + port + "\n");
