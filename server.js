@@ -16,10 +16,20 @@ app.get('/', function (req, res, next) {
 		galleries: cardinfo,
 		title: "Photography Galleries",
 		navbar: "Add Gallery",
-		navbarLink: "#"
+		navbarLink: "addgallery"
 	};
 	res.status(200);
 	res.render('homepage', args);
+})
+
+app.get('/addgallery', function (req, res, next) {
+	var args = {
+		title: "Photography Galleries - Add Gallery",
+		navbar: "Home",
+		navbarLink: "/"
+	};
+	res.status(200);
+	res.render('addgallery', args);
 })
 
 app.get('/gallery/:page', function(req, res, next){
