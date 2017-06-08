@@ -30,7 +30,7 @@ app.get('/gallery/:page', function(req, res, next){
    if (singleCard) {
       var args = {
 		  galleries: singleCard, //change to actual images in gallery
- 		  title: singleCard["gallery"] + " - By: " + singleCard.author,
+ 		  title: singleCard["gallery"] + " - " + singleCard.author,
  		  navbar: "Home",
  		  navbarLink: "/"
      };
