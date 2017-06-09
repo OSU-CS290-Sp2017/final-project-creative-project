@@ -203,20 +203,32 @@ input {
 	width: 200px;
 	height: 45px;
 	border: none;
-	border-radius: 2px;
 	background-color: #f2c12e;
 	font-weight: bold;
 }
 
-.submit:hover {
+.submit:hover, .imageurl0:hover {
 	box-shadow: 3px 3px 5px #909090;
+	transform: scale(1.05);
+	cursor: pointer;
 }
 
-.imageurl1, .imageurl2, .imageurl3, .imageurl4, .imageurl5 {
+/*.imageurl1, .imageurl2, .imageurl3, .imageurl4, .imageurl5 {
 	color: #f25252;
-}
+}*/
 
 .imageurl0 {
-	color: #14a697;
+	background-color: #00a5a6;
+	color: white;
+	padding: 7px;
+
+	outline: none;
+	border: none;
 }
+
+.fa-plus {
+	color: white;
+	padding-right: 7px;
+}
+
 
