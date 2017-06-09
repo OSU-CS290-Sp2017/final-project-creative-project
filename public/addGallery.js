@@ -1,11 +1,17 @@
-var temp = document.getElementsByClassName("imageurl0");
-var button = temp[0];
+var button = document.getElementById("button");
+var textfield = document.getElementById("imageurl1");
+var list = document.getElementById("list");
 
-console.log(button);
-console.log(temp);
-
-button.on('keyup', function (e) {
-    if (e.keyCode == 13) {
-    	console.log("test");
-    }
-});
+button.addEventListener('click', function() {
+	var value = textfield.value;
+	if(value){
+		var node = document.createElement("li");
+		var textnode = document.createTextNode(value);
+		node.appendChild(textnode);
+		list.appendChild(node);
+		textfield.value = '';
+	}
+	else{
+		alert("Please enter a URL");
+	}
+})

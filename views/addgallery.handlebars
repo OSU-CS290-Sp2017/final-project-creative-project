@@ -1,5 +1,4 @@
 {{> header}}
-<script type="text/javascript" src="/addGallery.js" charset="utf-8"></script>
 
 <form action="" method="post" enctype="multipart/form-data">
          <fieldset>
@@ -17,17 +16,22 @@
                 </tr>
                 
                 <tr>
-                    <td class="col1"><button type="button" for="imageurl1" class="imageurl0"><i class="fa fa-plus" aria-hidden="true"></i>Add Image</button></th>
+                    <td class="col1"><button id="button" type="button" for="imageurl1" class="imageurl0"><i class="fa fa-plus" aria-hidden="true"></i>Add Image</button></th>
                     <td class="col2"><input type="url" class="col2" id="imageurl1" name="imageurl1" placeholder="Enter a URL"></input>
                     <br/></th>
                 </tr>
               </table>
-              <table>
-                  
-              </table>
+
+              <div class="list-wrapper">
+                <div class="link-title">Added Links</div>
+                <ol class="link-list" id="list">
+                </ol>
+              </div>
 
               <div class="button-container">
                 <input type="submit" class="submit" value="Submit Gallery" />
               </div>
          </fieldset>
       </form>
+<script type="text/javascript" src="/addGallery.js" charset="utf-8"></script>
+

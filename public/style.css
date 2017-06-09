@@ -233,3 +233,25 @@ input {
 }
 
 
+.list-wrapper {
+	background-color: #ececec;
+	padding: 10px;
+	margin: 0 10% 30px 10%;
+	border-radius: 10px;
+}
+
+.link-title {
+	text-align: center;
+	line-height: 30px;
+	font-size: 25px;
+	padding-bottom: 5px;
+}
+
+.link-list {
+	padding: 0 15% 0 15%;
+}
+
+.link-list li {
+	list-style-position: inside;
+	overflow: hidden;
+}
