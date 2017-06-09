@@ -20,23 +20,23 @@
         <main class="img_gallery">
 
           <div class="preview-img" align="center">
-    <!--     <div class="title-box" id="showtxt">Car1</div> -->
             <img name="preview" src="/G/G1/car1.jpg" alt=""/>
           </div>
+          <div class="_title" id="_titleID" style="color: white">Mazda Racecar</div>
 <br>
     <div class="wrap">
         <div class="mini-imgs" align="center" id="_select">
-          <img onmouseover="preview.src=car1.src" name="car1" src="/G/G1/car1.jpg" alt="" />
-          <img onmouseover="preview.src=car2.src" name="car2" src="/G/G1/car2.jpg" alt="" />
-          <img onmouseover="preview.src=car3.src" name="car3" src="/G/G1/car3.jpg" alt="" />
-          <img onmouseover="preview.src=car4.src" name="car4" src="/G/G1/car4.jpeg" alt="" />
-          <img onmouseover="preview.src=car5.src" name="car5" src="/G/G1/car5.jpeg" alt="" />
-          <img onmouseover="preview.src=car6.src" name="car6" src="/G/G1/car6.jpg" alt="" />
-          <img onmouseover="preview.src=car7.src" name="car7" src="/G/G1/car7.jpg" alt="" />
+          <img onmouseover="preview.src=car1.src; img1_txt()" name="car1" src="/G/G1/car1.jpg" alt="" />
+          <img onmouseover="preview.src=car2.src; img2_txt()" name="car2" src="/G/G1/car2.jpg" alt="" />
+          <img onmouseover="preview.src=car3.src; img3_txt()" name="car3" src="/G/G1/car3.jpg" alt="" />
+          <img onmouseover="preview.src=car4.src; img4_txt()" name="car4" src="/G/G1/car4.jpeg" alt="" />
+          <img onmouseover="preview.src=car5.src; img5_txt()" name="car5" src="/G/G1/car5.jpeg" alt="" />
+          <img onmouseover="preview.src=car6.src; img6_txt()" name="car6" src="/G/G1/car6.jpg" alt="" />
+          <img onmouseover="preview.src=car7.src; img7_txt()" name="car7" src="/G/G1/car7.jpg" alt="" />
         </div>
+
       </div>
         <br>
-
         </main>
      </body>
 </html>
@@ -61,18 +61,9 @@
   height: 550px;
 }
 
-.title-box {
-  display: block;
-  position: absolute;
-  width: 170px;
-  height: 35px;
-  color: #000;
-  opacity: .3;
-  border: 1px solid black;
-  text-align: center;
-  margin-top: 70px;
-  margin-left: 1020px;
-  font-size: 20px;
+._title {
+  font-size: 15px;
+  margin-left: 320px;
 }
 
 
@@ -88,7 +79,7 @@ body {
   -moz-border-radius: 5px;
   border-radius: 5px;
   margin-bottom: 5px !important;
-  max-width: 600px;
+  max-width: 580px;
   padding-top: 5px;
 }
 
@@ -102,7 +93,33 @@ body {
 ::-webkit-scrollbar {
   background-color: #808080;
 }
-
-
-
 </style>
+
+<script>
+function img1_txt() {
+  document.getElementById("_titleID").innerHTML = "Mazda Racecar";
+}
+
+function img2_txt() {
+  document.getElementById("_titleID").innerHTML = "Cool Blue Lambo";
+}
+
+function img3_txt() {
+  document.getElementById("_titleID").innerHTML = "Striped Mustang";
+}
+
+function img4_txt() {
+  document.getElementById("_titleID").innerHTML = "Ferrari Butt";
+}
+
+function img5_txt() {
+  document.getElementById("_titleID").innerHTML = "Tesla Sunlight";
+}
+function img6_txt() {
+  document.getElementById("_titleID").innerHTML = "City Porsche";
+}
+
+function img7_txt() {
+  document.getElementById("_titleID").innerHTML = "Charger";
+}
+</script>
