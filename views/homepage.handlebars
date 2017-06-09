@@ -1,8 +1,14 @@
 {{>header}}
 
 <main class="pictures">
-{{#each galleries}}
-	{{>gallerycard}}
+
+{{#each galleries as |item index|}}
+	<div class="Gallery">
+		<a href="gallery/{{index}}">
+			<div class="card-backdrop">{{name}} | {{author}}</div>
+			<img src="{{mainimg}}"/>
+		</a>
+	</div>
 {{/each}}
 
 </main>

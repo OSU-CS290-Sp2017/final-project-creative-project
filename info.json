@@ -1,42 +1,31 @@
 [
+	
 	{
-		"url": "gallery/0",
-		"gallery": "Gallery 1",
-		"author": "John Smith",
-		"image": "G/G1/G1Main.jpg"
-	},
-	{
-		"url": "gallery/1",
-		"gallery": "Gallery 2",
-		"author": "Author Example",
-		"image": "G/G2/G2Main.jpg"
-	},
-	{
-		"url": "gallery/2",
-		"gallery": "Gallery 3",
-		"author": "Jane Smith",
-		"image": "G/G3/G3Main.jpg"
-	},
-	{
-		"url": "gallery/3",
-		"gallery": "Gallery 4",
+		"name": "Gallery 1",
 		"author": "Jonas Smith",
-		"image": "G/G4/G4Main.jpg"
+		"mainimg": "https://www.w3schools.com/css/trolltunga.jpg",
+		"addtionalimgs": {
+			"0": "google.com",
+			"1": "google.com"
+		}
 	},
 	{
-		"url": "gallery/4",
-		"gallery": "Gallery 5",
-		"author": "Joe Smith",
-		"image": "G/G5/G5Main.jpg"
+		"name": "Not Gallery 1",
+		"author": "James Smith",
+		"mainimg": "https://wallpaperbrowse.com/media/images/Dubai-Photos-Images-Oicture-Dubai-Landmarks-800x600.jpg",
+		"addtionalimgs": {
+			"0": "google.com",
+			"1": "google.com"
+		}
+	},
+	{
+		"name": "Gallery 3",
+		"author": "Jim Smith",
+		"mainimg": "https://wallpaperbrowse.com/media/images/full-hd-happy-valentines-day-hd-wallpapers.jpg",
+		"addtionalimgs": {
+			"0": "google.com",
+			"1": "google.com"
+		}
 	}
-	//{
-			//"name": "Gallery Name",
-			//"author": "Jonas Smith",
-			//"mainimg": "google.com",
-			//"addtionalimgs": "google.com",
-			//"addtionalimgs": "google.com"
-			// Additional Images Should Only Be Called in the Specific Gallery
-			// The First three items should be called in the main page
-			// The is an example
-	//}
+
 ]
