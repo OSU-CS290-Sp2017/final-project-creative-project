@@ -179,6 +179,7 @@ td {
 input {
 	outline: none;
 	padding: 10px;
+	border: 1px solid #b9b9b9;
 }
 
 .col1 {
