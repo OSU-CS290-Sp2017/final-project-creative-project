@@ -29,4 +29,14 @@
 		"author": "Joe Smith",
 		"image": "G/G5/G5Main.jpg"
 	}
+	//{
+			//"name": "Gallery Name",
+			//"author": "Jonas Smith",
+			//"mainimg": "google.com",
+			//"addtionalimgs": "google.com",
+			//"addtionalimgs": "google.com"
+			// Additional Images Should Only Be Called in the Specific Gallery
+			// The First three items should be called in the main page
+			// The is an example
+	//}
 ]
