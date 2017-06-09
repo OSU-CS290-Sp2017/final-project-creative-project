@@ -27,20 +27,12 @@ a:hover, a:focus {
 	color: #f27649;
 }
 
-input {
-	outline: none;
-	width: 100%;
-}
-
 .Gallery img {
    border-radius: 10px;
    width: 300px;
    height: 300px;
    object-fit: cover;
 }
-
-
-
 
 
 /**************************************/
@@ -154,3 +146,78 @@ input {
 
 	transition: all 0.3s;
 }
+
+/**************************************/
+/*Add Gallery page*/
+
+form {
+	padding: 3% 7% 3% 7%;
+}
+
+fieldset {
+	padding: 3%;
+	width: 60%;
+	margin: auto;
+	background-color: white;
+	box-shadow: 10px 10px 5px #909090;
+	border: none;
+	border-radius: 5px;
+}
+
+table {
+	width: 100%;
+	margin: auto;
+	border-collapse: collapse;
+	margin-bottom: 40px;
+}
+
+td {
+	height: 100%;
+	padding: 3px;
+}
+
+input {
+	outline: none;
+	padding: 10px;
+	border: 1px solid #b9b9b9;
+}
+
+.col1 {
+	width: 25%;
+	text-align: right;
+	padding-right: 15px;
+}
+
+.col2 {
+	width: 80%;
+	margin: 2px 0 3px 0;
+}
+
+.button-container {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.submit {
+	margin: auto;
+	width: 200px;
+	height: 45px;
+	border: none;
+	border-radius: 2px;
+	background-color: #f2c12e;
+	font-weight: bold;
+}
+
+.submit:hover {
+	box-shadow: 3px 3px 5px #909090;
+}
+
+.imageurl1, .imageurl2, .imageurl3, .imageurl4, .imageurl5 {
+	color: #f25252;
+}
+
+.imageurl0 {
+	color: #14a697;
+}
+
