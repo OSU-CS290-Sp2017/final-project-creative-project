@@ -29,7 +29,7 @@ a:hover, a:focus {
 
 .Gallery img {
    border-radius: 10px;
-   width: 300px;
+   width: 1000px;
    height: 300px;
    object-fit: cover;
 }
@@ -102,8 +102,10 @@ a:hover, a:focus {
 .pictures {
    padding: 20px;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    flex-wrap: wrap;
+   
+
 }
 
 .error-container {
@@ -117,7 +119,7 @@ a:hover, a:focus {
 
 .Gallery {
    position: relative;
-   width: 300px;
+   width: 600px;
    height: 300px;
    margin: 20px;
 }
@@ -131,7 +133,7 @@ a:hover, a:focus {
 	right: 0;
 	z-index: 1000;
 
-	width: 300px;
+	width: 1000px;
 	height: 300px;
 	border-radius: 10px;
 
@@ -220,4 +222,3 @@ input {
 .imageurl0 {
 	color: #14a697;
 }
-
