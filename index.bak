@@ -13,9 +13,9 @@
 				<ul class ="navlist">
 					<li class = "navitem"><a href="#">Add Gallery</a></li>
           <li class = "navitem"><a href="#">About Us</a></li>
+          <li class = "navitem"><a href="#">Contact Us</a></li>
 					<li class = "navitem right">
 						<input type = "text" placeholder = "Search..." class = "site-search "/>
-            <li class = "navitem"><a href="#">Contact Us</a></li>
 					</li>
 				</ul>
 			</nav>
