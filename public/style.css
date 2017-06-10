@@ -1,13 +1,10 @@
-
 /*Notes
 Colors:
 	Blue: #14a697
 	Yellow: #f2c12e
 	Orange: #f27649
 	Red: #f25252
-
 	Source Image: https://cdn.tutsplus.com/wp/uploads/2014/01/preview-image@2x.png;
-
 /*
 /**************************************/
 /*Universal Styling*/
@@ -29,14 +26,14 @@ a:hover, a:focus {
 
 .Gallery img {
    border-radius: 10px;
-   width: 1000px;
+   width: 300px;
    height: 300px;
    object-fit: cover;
 }
 
 
 /**************************************/
-/*Site f and Navbar*/
+/*Site title and Navbar*/
 
 .site-title {
    display: block;
@@ -104,8 +101,6 @@ a:hover, a:focus {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-
-
 }
 
 .error-container {
@@ -186,228 +181,6 @@ input {
 
 .col1 {
 	width: 25%;
-	text-align: right;
-	padding-right: 15px;
-}
-
-.col2 {
-	width: 80%;
-	margin: 2px 0 3px 0;
-}
-
-.button-container {
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-}
-
-.submit {
-	margin: auto;
-	width: 200px;
-	height: 45px;
-	border: none;
-	border-radius: 2px;
-	background-color: #f2c12e;
-	font-weight: bold;
-}
-
-.submit:hover {
-	box-shadow: 3px 3px 5px #909090;
-}
-
-.imageurl1, .imageurl2, .imageurl3, .imageurl4, .imageurl5 {
-	color: #f25252;
-}
-
-.imageurl0 {
-	color: #14a697;
-}
-
-/*Notes
-Colors:
-	Blue: #14a697
-	Yellow: #f2c12e
-	Orange: #f27649
-	Red: #f25252
-	Source Image: https://cdn.tutsplus.com/wp/uploads/2014/01/preview-image@2x.png;
-/*
-/**************************************/
-/*Universal Styling*/
-body{
-   margin: 0px 0px 0px 0px;
-   background-color: lightgray;
-   font-family: 'Oswald', sans-serif;
-	font-weight: normal;
-}
-
-a {
-	color: #444;
-	text-decoration: none;
-}
-
-a:hover, a:focus {
-	color: #f27649;
-}
-
-.Gallery img {
-   border-radius: 10px;
-   width: 300px;
-   height: 300px;
-   object-fit: cover;
-}
-
-
-/**************************************/
-/*Site title and Navbar*/
-
-.site-title {
-   display: block;
-   text-align: center;
-   margin: 0;
-   font-size: 50px;
-   padding-top: 15px;
-   padding-bottom: 15px;
-   background-color: #3B3738;
-   font-weight: lighter;
-   color: #FFFFFF;
-   margin: 0;
-}
-
-.navbar {
-	background-color: #fff;
-	font-size: 18px;
-	line-height: 35px;
-}
-
-.navlist {
-	list-style: none;
-	background-color: #fff;
-	margin: 0 20px 0 20px;
-	padding: 0;
-}
-
-.navitem {
-	display: inline-block;
-	padding: 0px 10px 0px 10px;
-   margin-left: 20px;
-}
-
-.right {
-	float: right;
-	height: 35px;
-   padding-right: 20px;
-}
-
-.site-title.navbar {
-	position: fixed;
-	display: block;
-}
-
-.site-search {
-	display: block;
-	position: relative;
-	top: 18%;
-
-	padding: 3px;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 2px;
-	border-color: #dedede;
-
-	background-color: #eee;
-}
-
-
-/**************************************/
-/*Main content*/
-
-.pictures {
-   padding: 20px;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-}
-
-.error-container {
-  font-size: 36px;
-  font-weight: 400;
-  text-align: center;
-}
-
-/**************************************/
-/*Gallery Cards*/
-
-.Gallery {
-   position: relative;
-   width: 300px;
-   height: 300px;
-   margin: 20px;
-}
-
-
-.card-backdrop {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 1000;
-
-	width: 300px;
-	height: 300px;
-	border-radius: 10px;
-
-	background-color: rgba(59, 55, 56, 0);
-	color: rgba(255,255,255,0);
-	text-align: center;
-	font-size: 20px;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	transition: all 0.3s;
-
-}
-
-/**************************************/
-/*Add Gallery page*/
-
-form {
-	padding: 3% 7% 3% 7%;
-}
-
-fieldset {
-	padding: 3%;
-	width: 60%;
-	margin: auto;
-	background-color: white;
-	box-shadow: 10px 10px 5px #909090;
-	border: none;
-	border-radius: 5px;
-}
-
-table {
-	width: 100%;
-	margin: auto;
-	border-collapse: collapse;
-	margin-bottom: 40px;
-}
-
-td {
-	height: 100%;
-	padding: 3px;
-}
-
-input {
-	outline: none;
-	padding: 10px;
-	border: 1px solid #b9b9b9;
-}
-
-.col1 {
-	width: 60%;
 	text-align: right;
 	padding-right: 15px;
 }
