@@ -12,38 +12,45 @@
 			<nav class ="navbar">
 				<ul class ="navlist">
 					<li class = "navitem"><a href="#">Add Gallery</a></li>
+          <li class = "navitem"><a href="#">About Us</a></li>
 					<li class = "navitem right">
 						<input type = "text" placeholder = "Search..." class = "site-search "/>
 					</li>
 				</ul>
 			</nav>
 		</header>
+
 		<main class="Galleries">
 		  <div class="Gallery">
 			<a href="gallery/1">
 				<div class="card-backdrop">Gallery 1 | John Smith</div>
 				<img src="G/G1/G1Main.jpg" /></a>
 		  </div>
+
 		  <div class="Gallery">
 			<a href="gallery/2">
 				<div class="card-backdrop">Gallery 2 | Author Example</div>
 				<img src="G/G2/G2Main.jpg" /></a>
 		  </div>
+
 		  <div class="Gallery">
 			<a href="gallery/3">
 				<div class="card-backdrop">Gallery 3 | Jane Smith</div>
 				<img src="G/G3/G3Main.jpg" /></a>
 		  </div>
+
 		  <div class="Gallery">
 			<a href="gallery/4">
 				<div class="card-backdrop">Gallery 4 | Jonas Smith</div>
 				<img src="G/G4/G4Main.jpg" /></a>
 		  </div>
+
 		  <div class="Gallery">
 			<a href="gallery/5">
 				<div class="card-backdrop">Gallery 5 | Jesus Smith</div>
 				<img src="G/G5/G5Main.jpg" /></a>
 			</div>
+
 	   </main>
 
 
