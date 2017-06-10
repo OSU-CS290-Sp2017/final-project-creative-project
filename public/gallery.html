@@ -1,7 +1,7 @@
 
 <html>
   <head>
-    <title>Cars</title>
+    <title>Car Gallery</title>
     <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
   </head>
@@ -13,6 +13,8 @@
 	  		<nav class ="navbar">
 	  			<ul class ="navlist">
 	  				<li class = "navitem"><a href="#">Home</a></li>
+            <li class = "navitem"><a href="#">About Us</a></li>
+            <li class = "navitem"><a href="#">Contact Us</a></li>
 	  			</ul>
 	  		</nav>
 	  	</header>
@@ -20,10 +22,11 @@
         <main class="img_gallery">
 
           <div class="preview-img" align="center">
-            <img name="preview" src="/G/G1/car1.jpg" alt=""/>
+            <img id="p_img" name="preview" src="/G/G1/car1.jpg" onclick="openNav()" style="cursor: pointer" alt=""/>
+            <div class="_title"><div id="_titleID">Mazda MX-5 Miata</div></div>
           </div>
-          <div class="_title" id="_titleID" style="color: white">Mazda Racecar</div>
-<br>
+
+
     <div class="wrap">
         <div class="mini-imgs" align="center" id="_select">
           <img onmouseover="preview.src=car1.src; img1_txt()" name="car1" src="/G/G1/car1.jpg" alt="" />
@@ -35,6 +38,13 @@
           <img onmouseover="preview.src=car7.src; img7_txt()" name="car7" src="/G/G1/car7.jpg" alt="" />
         </div>
 
+  <div id="_POPUP" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 50px;">&times;</a>
+  <div class="overlay-content">
+    <img id="OV_CONTENT" style="width:900px; height: auto;" src="http://autodatz.com/wp-content/uploads/2017/05/Nice-Car-Wallpapers-For-Desktop-86-with-Nice-Car-Wallpapers-For-Desktop-1.jpg"</img>
+  </div>
+</div>
+
       </div>
         <br>
         </main>
@@ -44,27 +54,46 @@
 <style>
 .mini-imgs img {
   height: 80px;
-  border: 4px solid #fff;
+  border: 1px solid #404040;
   padding: 1px;
   margin: 0 10px 10px 0;
 }
 
 .mini-imgs img:hover {
-  border: 4px solid #fff;
+  border: 1px solid #404040;
   cursor: pointer;
+  opacity: .5;
 }
 
 .preview-img img {
-  border: 4px solid #fff;
+<!--  border: 4px solid #404040; -->
   padding: 1px;
   width: 900px;
   height: 550px;
 }
 
-._title {
-  font-size: 15px;
-  margin-left: 320px;
+.preview-img {
+  position: relative;
 }
+
+._title {
+/*  font-size: 20px; */
+  top: -500px;
+  left: -325px;
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 250px;
+}
+
+._title div {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  background: rgb(0, 0, 0);
+  background: rgbd(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
 
 
 body {
@@ -79,7 +108,7 @@ body {
   -moz-border-radius: 5px;
   border-radius: 5px;
   margin-bottom: 5px !important;
-  max-width: 580px;
+  max-width: 680px;
   padding-top: 5px;
 }
 
@@ -91,13 +120,63 @@ body {
 }
 
 ::-webkit-scrollbar {
-  background-color: #808080;
+  background-color: #404040;
 }
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.6s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.overlay a {
+    padding: -10px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+/*    transition: 0.3s; */
+}
+
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+  /*  font-size: 60px; */
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 </style>
 
 <script>
 function img1_txt() {
-  document.getElementById("_titleID").innerHTML = "Mazda Racecar";
+  document.getElementById("_titleID").innerHTML = "Mazda MX-5 Miata";
+// document.getElementById("OV_CONTENT").innerHTML =;
 }
 
 function img2_txt() {
@@ -121,5 +200,15 @@ function img6_txt() {
 
 function img7_txt() {
   document.getElementById("_titleID").innerHTML = "Charger";
+}
+
+function openNav() {
+    var img_src = document.getElementById("p_img").src;
+    document.getElementById("OV_CONTENT").src = img_src;
+    document.getElementById("_POPUP").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("_POPUP").style.height = "0%";
 }
 </script>
