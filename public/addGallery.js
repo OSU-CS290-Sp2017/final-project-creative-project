@@ -1,5 +1,7 @@
-var button = document.getElementById("button");
-var table = document.getElementById("newinput");
+var addButton = document.getElementById("addbutton");
+var removeButton = document.getElementById("removebutton");
+var tableBody = document.getElementById("newinput");
+var table = document.getElementsByTagName("table");
 
 /*
 <tr>
@@ -8,7 +10,7 @@ var table = document.getElementById("newinput");
 </tr>
 */
 
-button.addEventListener('click', function() {
+addbutton.addEventListener('click', function() {
 	var tr = document.createElement("tr");
 
 	var td1 = document.createElement("td");
@@ -18,13 +20,13 @@ button.addEventListener('click', function() {
 	td2.classList.add("col2");
 
 	var label = document.createElement("label");
+	var textnode = document.createTextNode("Image");
+
 	label.for = "addtionalimgs";
 	label.classList.add("name");
-	label.textfield = "Addtional Image URL: ";
+	label.appendChild(textnode);
 
 	td1.appendChild(label);
-
-	var br = document.createElement("br");
 	var input = document.createElement("input");
 	input.type = "url";
 	input.classList.add("col2");
@@ -32,11 +34,16 @@ button.addEventListener('click', function() {
 	input.name = "addtionalimgs";
 	input.placeholder = "Enter a URL";
 
-	br.appendChild(input);
-	td2.appendChild(br);
+	td2.appendChild(input);
 
 	tr.appendChild(td1);
 	tr.appendChild(td2);
 
-	table.appendChild(tr);
+	tableBody.after(tr);
 })
+
+removeButton.addEventListener('click', function(){
+	if(table[0].rows.length > 4){
+		table[0].deleteRow(4);
+	}
+

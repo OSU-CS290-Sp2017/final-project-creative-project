@@ -7,26 +7,33 @@
                 <tr>
                     <td class="col1"><label for="name" class="name">Gallery Name</label></td>
                     <td class="col2"><input type="text" class="col2" id="galleryname" name="galleryname" placeholder="Enter Gallery Name" />
-                    <br/></td>
+                    </td>
+
                 </tr>
 
                 <tr>
                     <td class="col1"><label for="author" class="name">Author</label></td>
                     <td class="col2"><input type="text" class = "col2" id="author" name="author" placeholder="Enter Author Name" />
-                    <br/></td>
+                    </td>
                 </tr>
 
                 <tr>
-                    <td class="col1"><label for="mainimg" class="name">Main Image URL: </label></td>
+                    <td class="col1"><label for="mainimg" class="name">Main Image</label></td>
                     <td class="col2"><input type="url" class="col2" id="mainimg" name="mainimg" placeholder="Enter a URL"></input>
-                    <br/></td>
+                    </td>
+
                 </tr>
 
                 <tr>
                    <td class="col1"></td>
-                   <td class="col2"><button id="button" type="button" for="addtionalimgs" class="imageurl0"><i class="fa fa-plus" aria-hidden="true"></i>Add Addtional Image</button></td>
+                   <td class="col2">
+                      <button id="addbutton" type="button" for="addtionalimgs" class="add-image"><i class="fa fa-plus" aria-hidden="true"></i>Add Addtional Image</button>
+
+                      <button id="removebutton" type="button" for="addtionalimgs" class="remove-image"><i class="fa fa-minus" aria-hidden="true"></i>Remove Previous Image</button>
+                   </td>
                 </tr>
-             </tbody>
+               </tbody>
+
               </table>
 
               <div class="button-container">

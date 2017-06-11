@@ -208,18 +208,14 @@ input {
 	font-weight: bold;
 }
 
-.submit:hover, .imageurl0:hover {
+.submit:hover, .add-image:hover, .remove-image:hover {
 	box-shadow: 3px 3px 5px #909090;
 	transform: scale(1.05);
 	cursor: pointer;
 }
 
-/*.imageurl1, .imageurl2, .imageurl3, .imageurl4, .imageurl5 {
-	color: #f25252;
-}*/
-
-.imageurl0 {
-	background-color: #00a5a6;
+.add-image, .remove-image {
+	
 	color: white;
 	padding: 7px;
 
@@ -227,11 +223,20 @@ input {
 	border: none;
 }
 
-.fa-plus {
+.add-image {
+	margin-right: 5%;
+	background-color: #00a5a6;
+}
+
+.remove-image {
+	/*float: right;*/
+	background-color: #f25252;
+}
+
+.fa-plus, .fa-minus {
 	color: white;
 	padding-right: 7px;
 }
-
 
 .list-wrapper {
 	background-color: #ececec;

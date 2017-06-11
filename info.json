@@ -26,6 +26,24 @@
 			"0": "google.com",
 			"1": "google.com"
 		}
+	},
+	{
+		"name": "Gallery 4",
+		"author": "John Smith",
+		"mainimg": "http://i3.mirror.co.uk/incoming/article9510697.ece/ALTERNATES/s615/PAY-THE-MAGIC-OF-WINTERTIME-IN-FINNISH-LAPLAND.jpg",
+		"addtionalimgs": {
+			"0": "google.com",
+			"1": "google.com"
+		}
+	},
+	{
+		"name": "Gallery 5",
+		"author": "Jane Smith",
+		"mainimg": "http://i.dailymail.co.uk/i/pix/2016/09/13/14/384A98B300000578-0-image-a-63_1473774825844.jpg",
+		"addtionalimgs": {
+			"0": "google.com",
+			"1": "google.com"
+		}
 	}
 
 ]
