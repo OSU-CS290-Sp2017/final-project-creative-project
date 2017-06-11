@@ -46,4 +46,4 @@ removeButton.addEventListener('click', function(){
 	if(table[0].rows.length > 4){
 		table[0].deleteRow(4);
 	}
-
+})
