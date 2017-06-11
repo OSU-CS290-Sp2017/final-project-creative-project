@@ -27,7 +27,6 @@ addbutton.addEventListener('click', function() {
 	label.appendChild(textnode);
 
 	td1.appendChild(label);
-
 	var input = document.createElement("input");
 	input.type = "url";
 	input.classList.add("col2");
@@ -47,4 +46,4 @@ removeButton.addEventListener('click', function(){
 	if(table[0].rows.length > 4){
 		table[0].deleteRow(4);
 	}
-})
+
