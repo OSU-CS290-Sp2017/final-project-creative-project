@@ -2,6 +2,24 @@
 
 <main class="pictures">
 
-{{>gallerycard}}
+<body>
+      <div class="preview-img" align="center">
+        <img name="preview" src="{{mainimg}}" alt=""/>
+      </div>
+    <div class="mini-imgs" align="center" id="_select">
+
+    {{#each additionalimgs}}
+
+      <img onmouseover="preview.src=car1.src" name="car1" src="/G/G1/car1.jpg" alt="" />
+      <img onmouseover="preview.src=car2.src" name="car2" src="/G/G1/car2.jpg" alt="" />
+      <img onmouseover="preview.src=car3.src" name="car3" src="/G/G1/car3.jpg" alt="" />
+      <img onmouseover="preview.src=car4.src" name="car4" src="/G/G1/car4.jpeg" alt="" />
+      <img onmouseover="preview.src=car5.src" name="car5" src="/G/G1/car5.jpeg" alt="" />
+      <img onmouseover="preview.src=car6.src" name="car6" src="/G/G1/car6.jpg" alt="" />
+      <img onmouseover="preview.src=car7.src" name="car7" src="/G/G1/car7.jpg" alt="" />
+    </div>
+    <br>
+
+ </body>
 
 </main>
