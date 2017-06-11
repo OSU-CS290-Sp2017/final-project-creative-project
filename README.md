@@ -13,6 +13,8 @@ Photography Website
 
 1. https://www.sitepoint.com/creating-and-handling-forms-in-node-js/
 2. Used the Website above to create form inputs and outputs
+3. http://html-tuts.com/category/freebies/
+4. Website used for Galleries
 
 
 ## Progress update
