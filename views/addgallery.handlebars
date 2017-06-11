@@ -3,30 +3,35 @@
 <form action="" method="post" enctype="multipart/form-data">
          <fieldset>
             <table>
+               <tbody id="newinput">
                 <tr>
-                    <td class="col1"><label for="galleryname" class="name">Gallery Name</label></th>
+                    <td class="col1"><label for="name" class="name">Gallery Name</label></td>
                     <td class="col2"><input type="text" class="col2" id="galleryname" name="galleryname" placeholder="Enter Gallery Name" />
-                    <br/></th>
+                    </td>
                 </tr>
-                
-                <tr>
-                    <td class="col1"><label for="author" class="name">Author</label></th>
-                    <td class="col2"><input type="text" class = "col2" id="author" name="author" placeholder="Enter Author Name" />
-                    <br/></th>
-                </tr>
-                
-                <tr>
-                    <td class="col1"><button id="button" type="button" for="imageurl1" class="imageurl0"><i class="fa fa-plus" aria-hidden="true"></i>Add Image</button></th>
-                    <td class="col2"><input type="url" class="col2" id="imageurl1" name="imageurl1" placeholder="Enter a URL"></input>
-                    <br/></th>
-                </tr>
-              </table>
 
-              <div class="list-wrapper">
-                <div class="link-title">Added Links</div>
-                <ol class="link-list" id="list">
-                </ol>
-              </div>
+                <tr>
+                    <td class="col1"><label for="author" class="name">Author</label></td>
+                    <td class="col2"><input type="text" class = "col2" id="author" name="author" placeholder="Enter Author Name" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col1"><label for="mainimg" class="name">Main Image</label></td>
+                    <td class="col2"><input type="url" class="col2" id="mainimg" name="mainimg" placeholder="Enter a URL"></input>
+                    </td>
+                </tr>
+
+                <tr>
+                   <td class="col1"></td>
+                   <td class="col2">
+                      <button id="addbutton" type="button" for="addtionalimgs" class="add-image"><i class="fa fa-plus" aria-hidden="true"></i>Add Addtional Image</button>
+
+                      <button id="removebutton" type="button" for="addtionalimgs" class="remove-image"><i class="fa fa-minus" aria-hidden="true"></i>Remove Previous Image</button>
+                   </td>
+                </tr>
+               </tbody>
+              </table>
 
               <div class="button-container">
                 <input type="submit" class="submit" value="Submit Gallery" />
@@ -34,4 +39,3 @@
          </fieldset>
       </form>
 <script type="text/javascript" src="/addGallery.js" charset="utf-8"></script>
-
