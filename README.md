@@ -7,4 +7,4 @@ Photography Website
 
 ## Comments
 
-1. All Branches are Deleted! If an issue aries create another branch else write to master!
+1. All Branches are Deleted! If an issue happens create another branch else write to master!
