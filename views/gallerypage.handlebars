@@ -2,16 +2,18 @@
 
 <main class="pictures">
 
-   <div class="center-photos">
-      <div class="preview-img">
-        <img id="large-image" name="preview" src="{{mainimg}}"/>
-      </div>
-    <div class="mini-imgs">
-      <img class="preview-small" name="main-photo" src="{{mainimg}}"/>
+<div class="center-photos">
+  <div class="main-img">
+    <a id="large-image-link" href="{{mainimg}}" target="_blank">
+      <img id="large-image" name="preview" src="{{mainimg}}"/>
+    </a>
+  </div>
+  <div class="mini-imgs">
+    <img class="preview" name="main-photo" src="{{mainimg}}"/>
       {{#each additionalimgs as |item index|}}
-      			<img class="preview-small" name="{{index}}" src="{{image}}"/>
+    		<img class="preview" name="{{index}}" src="{{image}}"/>
       {{/each}}
-    </div>
+  </div>
 </div>
 
 </main>
