@@ -2,6 +2,19 @@
 
 <main class="pictures">
 
-{{>gallerycard}}
+<body>
+   <div class="center-photos">
+      <div class="preview-img">
+        <img src="{{mainimg}}"/>
+      </div>
+    <div class="mini-imgs">
+      <img id="main-photo" src="{{mainimg}}"/>
+      {{#each additionalimgs as |item index|}}
+      			<img id="{{index}}" src="{{image}}"/>
+      {{/each}}
+    </div>
+</div>
+
+ </body>
 
 </main>

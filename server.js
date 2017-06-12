@@ -35,57 +35,43 @@ app.get('/addgallery', function (req, res, next) {
 	res.render('addgallery', args);
 })
 
+var count = 0
 app.post('/addgallery', function (req, res, next) {
-	//Store the data from the fields in your data store.
-	//The data store could be a file or database or any other store based
-	//on your application.
-	var fields = [];
+	var newGallery = {};
+	var additionalImg = [];
+	var key;
+
 	var form = new formidable.IncomingForm();
-	form.on('field', function (field, value) {
-		fs.appendFile("test.txt", "\n", function(err) {
-		if(err) {
-			return console.log(err);
+
+	form.on('field',  function(field, value){
+		if(count < 3){
+			newGallery[field] = value;
+			count++;
 		}
-		});
-
-		fs.appendFile("test.txt", field, function(err) {
-    	if(err) {
-        	return console.log(err);
-    	}
-		});
-
-		fs.appendFile("test.txt", "\n", function(err) {
-    	if(err) {
-        	return console.log(err);
-    	}
-		});
-
-		fs.appendFile("test.txt", value, function(err) {
-    	if(err) {
-        	return console.log(err);
-    	}
-		});
-
-		fs.appendFile("test.txt", "\n", function(err) {
-		if(err) {
-			return console.log(err);
+		else {
+			additionalImg.push({image: value});
 		}
-		});
+	});
+
+	form.on('end', function(){
+		newGallery["additionalimgs"] = additionalImg;
+		cardinfo.push(newGallery);
+		fs.writeFileSync("info.json", JSON.stringify(cardinfo));
+		count = 0;
 	});
 
 	form.parse(req);
 	res.redirect('/');
 })
 
-
 app.get('/gallery/:page', function(req, res, next){
 
 	var page = req.params.page;
 	var singleCard = cardinfo[page];
-
    if (singleCard) {
       var args = {
-		  galleries: singleCard, //change to actual images in gallery
+		  mainimg: singleCard.mainimg,
+		  additionalimgs: singleCard.additionalimgs,
  		  title: singleCard.name + " - " + singleCard.author,
  		  navbar: "Home",
  		  navbarLink: "/"
