@@ -56,7 +56,7 @@ app.post('/addgallery', function (req, res, next) {
 	form.on('end', function(){
 		newGallery["additionalimgs"] = additionalImg;
 		cardinfo.push(newGallery);
-		fs.writeFileSync("info.json", JSON.stringify(cardinfo));
+		fs.writeFileSync("infoTEST.json", JSON.stringify(cardinfo, null, "\t"));
 		count = 0;
 	});
 

@@ -73,5 +73,24 @@
 				"image": "https://d.ibtimes.co.uk/en/full/1507411/lando-calrissian-star-wars.jpg"
 			}
 		]
-	}	
+	},
+	{
+		"name": "Test Gallery",
+		"author": "New Author",
+		"mainimg": "https://static.pexels.com/photos/3247/nature-forest-industry-rails.jpg",
+		"additionalimgs": [
+			{
+				"image": "https://www.w3schools.com/css/trolltunga.jpg"
+			},
+			{
+				"image": "https://www.w3schools.com/css/trolltunga.jpg"
+			}
+		]
+	},
+	{
+		"name": "test",
+		"author": "test",
+		"mainimg": "https://static.pexels.com/photos/3247/nature-forest-industry-rails.jpg",
+		"additionalimgs": []
+	}
 ]
