@@ -82,8 +82,6 @@ app.get('/gallery/:page', function(req, res, next){
 
 	var page = req.params.page;
 	var singleCard = cardinfo[page];
-	console.log(singleCard);
-	console.log(singleCard.addtionalimgs);
    if (singleCard) {
       var args = {
 		  //galleries: singleCard, //change to actual images in gallery

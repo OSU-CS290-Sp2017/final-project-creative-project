@@ -3,16 +3,17 @@
 <main class="pictures">
 
 <body>
-      <div class="preview-img" align="center">
+   <div class="center-photos">
+      <div class="preview-img">
         <img src="{{mainimg}}"/>
       </div>
-    <div class="mini-imgs" align="center" id="_select">
-      <img src="{{mainimg}}"/>
-      {{#each addtionalimgs}}
-      			<img src="{{image}}"/>
+    <div class="mini-imgs">
+      <img id="main-photo" src="{{mainimg}}"/>
+      {{#each addtionalimgs as |item index|}}
+      			<img id="{{index}}" src="{{image}}"/>
       {{/each}}
     </div>
-    <br>
+</div>
 
  </body>
 
