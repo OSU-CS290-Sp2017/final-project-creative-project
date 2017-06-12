@@ -70,9 +70,8 @@ app.get('/gallery/:page', function(req, res, next){
 	var singleCard = cardinfo[page];
    if (singleCard) {
       var args = {
-		  //galleries: singleCard, //change to actual images in gallery
 		  mainimg: singleCard.mainimg,
-		  addtionalimgs: singleCard.addtionalimgs,
+		  additionalimgs: singleCard.additionalimgs,
  		  title: singleCard.name + " - " + singleCard.author,
  		  navbar: "Home",
  		  navbarLink: "/"
