@@ -68,10 +68,11 @@ app.get('/gallery/:page', function(req, res, next){
 
 	var page = req.params.page;
 	var singleCard = cardinfo[page];
-
    if (singleCard) {
       var args = {
-		  galleries: singleCard, //change to actual images in gallery
+		  //galleries: singleCard, //change to actual images in gallery
+		  mainimg: singleCard.mainimg,
+		  addtionalimgs: singleCard.addtionalimgs,
  		  title: singleCard.name + " - " + singleCard.author,
  		  navbar: "Home",
  		  navbarLink: "/"

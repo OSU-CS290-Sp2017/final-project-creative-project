@@ -1,1 +1,43 @@
-[{"name":"Gallery 1","author":"Jonas Smith","mainimg":"https://www.w3schools.com/css/trolltunga.jpg","addtionalimgs":{"0":"google.com","1":"google.com"}},{"name":"Not Gallery 1","author":"James Smith","mainimg":"https://wallpaperbrowse.com/media/images/Dubai-Photos-Images-Oicture-Dubai-Landmarks-800x600.jpg","addtionalimgs":{"0":"google.com","1":"google.com"}},{"name":"Gallery 3","author":"Jim Smith","mainimg":"https://wallpaperbrowse.com/media/images/full-hd-happy-valentines-day-hd-wallpapers.jpg","addtionalimgs":{"0":"google.com","1":"google.com"}},{"name":"Gallery 4","author":"John Smith","mainimg":"http://i3.mirror.co.uk/incoming/article9510697.ece/ALTERNATES/s615/PAY-THE-MAGIC-OF-WINTERTIME-IN-FINNISH-LAPLAND.jpg","addtionalimgs":{"0":"google.com","1":"google.com"}},{"name":"Gallery 5","author":"Jane Smith","mainimg":"http://i.dailymail.co.uk/i/pix/2016/09/13/14/384A98B300000578-0-image-a-63_1473774825844.jpg","additionalimgs":[]}]
+
+[
+
+	{
+		"name": "Gallery 1",
+		"author": "Jonas Smith",
+		"mainimg": "https://www.w3schools.com/css/trolltunga.jpg",
+		"addtionalimgs": [
+			{"image": "https://lumiere-a.akamaihd.net/v1/images/databank_clonecommandercody_01_169_f3aa1a91.jpeg?region=0%2C49%2C1560%2C780"},
+			{"image": "https://i.ytimg.com/vi/Fm0vRx1mSGw/maxresdefault.jpg"},
+			{"image": "https://s-media-cache-ak0.pinimg.com/originals/19/4a/cf/194acf3dd9f02fe0c6b8b80be8242a5e.jpg"},
+			{"image": "https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/562531a5e4b0950934c4bbae/1445278129265/"},
+			{"image": "http://nerdist.com/wp-content/uploads/2016/12/princess-leia.jpg"},
+			{"image": "https://d.ibtimes.co.uk/en/full/1507411/lando-calrissian-star-wars.jpg"}
+		]
+	},
+	{
+		"name": "Gallery 2",
+		"author": "James Smith",
+		"mainimg": "http://static.srcdn.com/wp-content/uploads/boba-fett-10-things-you-need-to-know-about-boba-fett.jpg",
+		"addtionalimgs": [
+			{"image": "https://lumiere-a.akamaihd.net/v1/images/databank_clonecommandercody_01_169_f3aa1a91.jpeg?region=0%2C49%2C1560%2C780"},
+			{"image": "https://i.ytimg.com/vi/Fm0vRx1mSGw/maxresdefault.jpg"},
+			{"image": "https://s-media-cache-ak0.pinimg.com/originals/19/4a/cf/194acf3dd9f02fe0c6b8b80be8242a5e.jpg"},
+			{"image": "https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/562531a5e4b0950934c4bbae/1445278129265/"},
+			{"image": "http://nerdist.com/wp-content/uploads/2016/12/princess-leia.jpg"},
+			{"image": "https://d.ibtimes.co.uk/en/full/1507411/lando-calrissian-star-wars.jpg"}
+		]
+	},
+	{
+		"name": "Gallery 2",
+		"author": "James Jones",
+		"mainimg": "https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/562531a5e4b0950934c4bbae/1445278129265/",
+		"addtionalimgs": [
+			{"image": "https://lumiere-a.akamaihd.net/v1/images/databank_clonecommandercody_01_169_f3aa1a91.jpeg?region=0%2C49%2C1560%2C780"},
+			{"image": "https://i.ytimg.com/vi/Fm0vRx1mSGw/maxresdefault.jpg"},
+			{"image": "https://s-media-cache-ak0.pinimg.com/originals/19/4a/cf/194acf3dd9f02fe0c6b8b80be8242a5e.jpg"},
+			{"image": "https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/562531a5e4b0950934c4bbae/1445278129265/"},
+			{"image": "http://nerdist.com/wp-content/uploads/2016/12/princess-leia.jpg"},
+			{"image": "https://d.ibtimes.co.uk/en/full/1507411/lando-calrissian-star-wars.jpg"}
+		]
+	}
+]

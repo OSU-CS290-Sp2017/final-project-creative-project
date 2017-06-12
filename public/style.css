@@ -215,7 +215,7 @@ input {
 }
 
 .add-image, .remove-image {
-	
+
 	color: white;
 	padding: 7px;
 
@@ -259,4 +259,43 @@ input {
 .link-list li {
 	list-style-position: inside;
 	overflow: hidden;
+}
+
+/**************************************/
+/*Gallery individual pages*/
+
+.mini-imgs img {
+  height: 80px;
+  width: 100px;
+  padding: 1px;
+  margin: 0 10px 10px 0;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.mini-imgs img:hover {
+
+  cursor: pointer;
+  opacity: .5;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.mini-imgs {
+   overflow-x: scroll;
+   overflow-y: hidden;
+   height: 110px;
+   white-space: nowrap;
+   max-width: 900px;
+   border-radius: 10px;
+}
+.preview-img img {
+   border: 10px solid white;
+   border-radius: 5px;
+   padding: 1px;
+   width: 900px;
+   height: 550px;
+   object-fit: cover;
+}
+.center-photos {
+   margin-left: auto ;
+   margin-right: auto ;
 }
