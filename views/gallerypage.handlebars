@@ -4,10 +4,10 @@
 
    <div class="center-photos">
       <div class="preview-img">
-        <img name="preview" src="{{mainimg}}"/>
+        <img id="large-image" name="preview" src="{{mainimg}}"/>
       </div>
     <div class="mini-imgs">
-      <img name="main-photo" src="{{mainimg}}"/>
+      <img class="preview-small" name="main-photo" src="{{mainimg}}"/>
       {{#each additionalimgs as |item index|}}
       			<img class="preview-small" name="{{index}}" src="{{image}}"/>
       {{/each}}
