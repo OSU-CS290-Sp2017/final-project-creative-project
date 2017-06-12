@@ -55,7 +55,7 @@ app.post('/addgallery', function (req, res, next) {
 	form.on('end', function(){
 		newGallery["additionalimgs"] = additionalImg;
 		cardinfo.push(newGallery);
-		fs.writeFileSync("infoTEST.json", JSON.stringify(cardinfo, null, "\t"));
+		fs.writeFileSync("info.json", JSON.stringify(cardinfo, null, "\t"));
 		count = 0;
 	});
 
@@ -75,7 +75,7 @@ app.get('/gallery/:page', function(req, res, next){
 			navbarLink: "/"
 		};
 		res.render('gallerypage', args);
-	} 
+	}
 	else {
 		next();
 	}
