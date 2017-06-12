@@ -39,7 +39,6 @@ var count = 0
 app.post('/addgallery', function (req, res, next) {
 	var newGallery = {};
 	var additionalImg = [];
-	var key;
 
 	var form = new formidable.IncomingForm();
 
@@ -65,21 +64,21 @@ app.post('/addgallery', function (req, res, next) {
 })
 
 app.get('/gallery/:page', function(req, res, next){
-
 	var page = req.params.page;
 	var singleCard = cardinfo[page];
-   if (singleCard) {
-      var args = {
-		  mainimg: singleCard.mainimg,
-		  additionalimgs: singleCard.additionalimgs,
- 		  title: singleCard.name + " - " + singleCard.author,
- 		  navbar: "Home",
- 		  navbarLink: "/"
-     };
-     res.render('gallerypage', args);
-   } else {
-     next();
-   }
+	if (singleCard) {
+		var args = {
+			mainimg: singleCard.mainimg,
+			additionalimgs: singleCard.additionalimgs,
+			title: singleCard.name + " - " + singleCard.author,
+			navbar: "Home",
+			navbarLink: "/"
+		};
+		res.render('gallerypage', args);
+	} 
+	else {
+		next();
+	}
 })
 
 app.use(express.static(path.join(__dirname, '/public/')));
